@@ -1,0 +1,67 @@
+<!docutype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Animals In the Dark</title>
+		<link rel="stylesheet" href="styles/style.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<small><h1 class="title">Find All The Missing Animals In The Dark</h1></small>
+		<p class="instruct">Find all 8, click to turn on flashlight</p>
+	</head>
+	<body>
+		<ul>
+			<li><a href="#"><i class="fas fa-cat"></i></a></li>
+		</ul>
+
+		<h2>
+			<li><a href="#"><i class="fas fa-kiwi-bird"></i></a></li>
+		</h2>
+
+		<h3>
+			<li><a href="#"><i class="fas fa-dog"></i></a></li>
+		</h3>
+
+		<h4>
+			<li><a href="#"><i class="fas fa-hippo"></i></a></li>
+		</h4>
+
+		<h5>
+			<li><a href="#"><i class="fas fa-horse"></i></a></li>
+		</h5>
+
+		<h6>
+			<li><a href="#"><i class="fas fa-frog"></i></a></li>
+		</h6>
+
+		<ol>
+			<li><a href="#"><i class="fas fa-fish"></i></a></li>
+		</ol>
+
+		<em>
+			<li><a href="#"><i class="fas fa-dragon"></i></a></li>
+		</em>
+
+
+
+		<div class="cursor"></div>
+
+		<script>
+			
+			const cursor = document.querySelector('.cursor');
+
+			document.addEventListener('mousemove', e => {
+				cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+			})
+
+			document.addEventListener('click', () => {
+				cursor.classList.add("expand");
+			})
+
+		</script>
+
+	</body>
+</html>
